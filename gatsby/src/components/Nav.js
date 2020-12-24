@@ -6,7 +6,7 @@ import Logo from './Logo';
 const NavStyles = styled.nav`
   margin-bottom: 3rem;
   .logo {
-    transform: translateY(-25%)
+    transform: translateY(-25%);
   }
   ul {
     margin: 0;
@@ -24,13 +24,13 @@ const NavStyles = styled.nav`
     --rotate: -2deg;
     transform: rotate(var(--rotate));
     order: 1;
-    &:nth-child(1){
+    &:nth-child(1) {
       --rotate: 1deg;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       --rotate: -2.5deg;
     }
-    &:nth-child(4){
+    &:nth-child(4) {
       --rotate: 2.5deg;
     }
     &:hover {
@@ -49,7 +49,6 @@ const NavStyles = styled.nav`
   }
 `;
 
-
 export default function Nav() {
   return (
     <NavStyles>
@@ -61,7 +60,9 @@ export default function Nav() {
           <Link to="/pizzas">Pizza Menu</Link>
         </li>
         <li>
-          <Link to="/"><Logo/></Link>
+          <Link to="/">
+            <Logo />
+          </Link>
         </li>
         <li>
           <Link to="/slicemasters">SliceMasters</Link>
